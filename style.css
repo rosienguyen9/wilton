@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    padding: 15px 100px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.tools{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.tools i{
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-input{
+    width: 300px;
+    padding: 8px 18px;   
+    box-sizing: border-box;
+    border: 0px solid;
+    border-radius: 20px;
+    background-color: rgb(235, 244, 245);
+    
+}
+
+.search{
+    position: relative;
+    
+}
+
+.search-btn{
+    position: absolute;
+    right: 0.5px;
+    height: 32px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(0, 115, 120);
+    color: white;
+    border: 0 0 0 0.1px solid;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: rgb(89, 109, 110);
+}
+
+.small-underline{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    border: 0.1px solid;
+
+}
+
+/* end of navbar */
+
+/* header */
+.header{
+    padding-top: 120px;
+}
+
+.big-paragraph{
+    color: white;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.big-text-1{
+    background-color: rgb(241, 134, 182);
+    padding: 0 10px;
+    width: 390px;
+}
+
+.big-text-2{
+    background-color: rgb(241, 134, 182);
+    padding: 0 10px;
+    width: 483px;
+}
+
+.small-paragraph{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 83%;
+    padding: 0 10px;
+    
+}
+
+.small-text-3{
+    font-weight: bold;
+}
+
+
+.banner{
+    margin-top: -350px;
+    margin-left: 160px;
+    position: absolute;
+}
+
+.paragraph-btn{
+    padding: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: white;
+    background-color: #e40e6d;
+    border: 0;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.paragraph-btn:hover{
+    color: #e40e6d;
+    background-color: white;
+    border: 1px solid #e40e6d;
+}
+
+/* end of header */
+
+/* ideas */
+.ideas{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.ideas-1, .ideas-2, .ideas-3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;  
+    margin: 20px;
+        
+}
+
+.picture{
+    width: 100%;
+    
+}
+
+.ideas-info{
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    position: abolute;
+    margin-top: -50px;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: 3px solid rgb(241, 134, 182);
+    padding: 10px;
+
+    
+}
+
+.info-title{
+    color: #e40e6d;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.ideas-info p{
+    font-size: 15px;
+}
+
+/* end of ideas */
+
+/* shop */
+.shop-title{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 22px;
+    color: rgb(0, 115, 120);
+    font-weight: bold;
+}
+
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    margin:20px 50px 100px;
+
+}
+
+.items div{
+    width: 150px;
+}
+
+.item-image{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.items h2{
+    font-size: 16px;
+    text-align: center;
+    color: #e40e6d;
+
+}
+
+/* end of shop */
+
+/* recipes */
+.recipe{
+    display: flex;
+    margin: 80px 200px;
+    
+}
+
+.recipe-picture{
+    width: 350px;
+}
+
+.recipe-content{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.recipe-title{
+    margin-bottom: 20px;
+    color: rgb(0, 115, 120);
+    font-weight: bold;
+}
+
+.recipe-paragraph{
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    
+}
+
+.recipe-btn{
+    color: #e40e6d;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+}
+/* end of recipes */
+
+/* best seller */
+.best-seller-title{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 22px;
+    color: rgb(0, 115, 120);
+    font-weight: bold;
+}
+
+.goods{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    margin: 20px 50px 100px;
+
+}
+
+.goods div{
+    width: 150px;
+}
+
+.goods-image{
+    width: 100%;
+    
+}
+
+.goods-info{
+    font-size: 15px;
+    color: #e40e6d;
+    font-weight: bold;
+}
+
+.goods-btn{
+    padding: 9px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    background-color: #e40e6d;
+    border: 0;
+    font-weight: bold;
+    font-size: 10px;
+    transition: 0.5s;
+}
+
+.goods-btn:hover{
+    color: #e40e6d;
+    background-color: white;
+    border: 1px solid #e40e6d;
+}
+/* end of best seller */
+
+
+
