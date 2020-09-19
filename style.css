@@ -154,6 +154,7 @@ body{
     color: #e40e6d;
 }
 
+
 .checkbox1:hover ~ .hidden-box1{
     top: 100px;
 
