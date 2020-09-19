@@ -17,7 +17,7 @@ body{
     width: 100%;
     background-color: white;
     cursor: pointer;
-    
+    z-index: 1;
 }
 
 .content{
@@ -78,12 +78,113 @@ body{
     color: rgb(89, 109, 110);
 }
 
-.small-underline{
+.hidden-box1, .hidden-box2, .hidden-box3, .hidden-box4, .hidden-box5, .hidden-box6{
+    top: -150px;
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(241, 134, 182);
+    /* transition: 0.3s; */
+    font-weight: bold;
+}
+
+.hidden-box1 li{
+    list-style: none;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+
+.hidden-box1 h3{
+    color: #e40e6d;
+}
+
+.hidden-box2 li{
+    list-style: none;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+
+.hidden-box2 h3{
+    color: #e40e6d;
+}
+
+.hidden-box3 li{
+    list-style: none;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+
+.hidden-box3 h3{
+    color: #e40e6d;
+}
+
+.hidden-box4 li{
+    list-style: none;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+
+.hidden-box4 h3{
+    color: #e40e6d;
+}
+
+.hidden-box5 li{
+    list-style: none;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+
+.hidden-box5 h3{
+    color: #e40e6d;
+}
+
+.hidden-box6 li{
+    list-style: none;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+
+.hidden-box6 h3{
+    color: #e40e6d;
+}
+
+.checkbox1:hover ~ .hidden-box1{
+    top: 100px;
+
+}
+.checkbox2:hover ~ .hidden-box2{
+    top: 100px;
+
+}
+.checkbox3:hover ~ .hidden-box3{
+    top: 100px;
+
+}
+.checkbox4:hover ~ .hidden-box4{
+    top: 100px;
+
+}
+.checkbox5:hover ~ .hidden-box5{
+    top: 100px;
+
+}
+.checkbox6:hover ~ .hidden-box6{
+    top: 100px;
+
+}
+
+.small-line{
     display: flex;
     flex-direction: column;
     height: 20px;
     border: 0.1px solid;
-
+    color: rgb(0, 115, 120);
 }
 
 /* end of navbar */
@@ -321,6 +422,7 @@ body{
     font-weight: bold;
     font-size: 10px;
     transition: 0.5s;
+    
 }
 
 .goods-btn:hover{
@@ -330,5 +432,161 @@ body{
 }
 /* end of best seller */
 
+/* footer */
+.footer-top{
+    display: flex;  
+    flex: 1;
+    padding: 50px 110px 50px;
+    background-color: rgb(235, 244, 245);
+
+}
+
+
+.treat{
+    margin: 0 120px 0 20px;   
+}
+
+.treat-title{
+    font-size: 24px;
+    padding-bottom: 10px;
+    color: rgb(0, 115, 120);
+}
+.treat-paragraph{
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+.social-media{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 200px 0 -50px;
+    color: rgb(0, 115, 120);
+    
+    
+}
+.social-media li{
+    width: 39px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.information{
+    display: flex;
+    cursor: pointer;
+}
+
+.information li:hover{
+    text-decoration: underline  rgb(0, 115, 120);
+}
+
+.our-story-title{
+    color: rgb(0, 115, 120);
+}
+
+.our-story-list{
+    list-style: none;
+    line-height: 35px;
+    margin-top: 25px;
+    
+}
+
+.contact-list{
+    list-style: none;
+    margin-left: 80px;
+    line-height: 35px;
+    color: rgb(0, 115, 120);
+    font-weight: bold;
+}
+
+.search-input-1, .search-input-2{
+    width: 300px;
+    padding: 8px 18px;   
+    box-sizing: border-box;
+    border: 0px solid;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+
+.treat-btn{
+    /* position: absolute; */
+    right: 0.5px;
+    height: 32px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(0, 115, 120);
+    color: white;
+    border: 0 0 0 0.1px solid;
+    width: 40px;
+    margin-left: -30px;
+
+}
+
+.search-input-2{
+    margin-left: -20px;
+    border-left: 1px solid rgb(0, 115, 120);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 150px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 130px 50px;
+    background-color: rgb(234, 244, 245);
+    border-top: 1px solid rgba(142, 142, 142, .2);
+}
+
+.right-text ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 100px;
+    
+}
+
+.right-text li{
+    padding: 0 20px;
+    width: max-content;
+    list-style: none;
+    color: rgb(0, 115, 120);
+    font-weight: bold;
+}
+
+.right-text li:hover{
+    text-decoration: underline  rgb(0, 115, 120);
+}
+
+
+.left-text{
+    display: flex;
+    
+}
+
+.year, .rights{
+    width: max-content;
+}
+
+.rights{
+    padding: 0 20px;
+}
+
+.small-line-footer{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    border: 0.1px solid rgb(0, 115, 120);
+    
+}
+
+.year{
+    padding-right: 20px;
+}
+
+
+
+
+/* end of footer */
 
 
